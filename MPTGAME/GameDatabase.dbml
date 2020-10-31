@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="capricornisland" Class="GameDatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=capricornisland.db.2498781.hostedresource.com;Initial Catalog=capricornisland;Persist Security Info=True;User ID=capricornisland" SettingsObjectName="GameHost.Properties.Settings" SettingsPropertyName="capricornislandConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.actions" Member="actions">
+    <Type Name="action">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="action" Member="action1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="text" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="response" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="requires_more" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="requires_item" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tile_Visual_Lookup" Member="Tile_Visual_Lookups">
+    <Type Name="Tile_Visual_Lookup">
+      <Column Name="tilename" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="terrain" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tileType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inventory_Groups" Member="Inventory_Groups">
+    <Type Name="Inventory_Group">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="group_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="item_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="random" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="frequency" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.inventory_old" Member="inventory_olds">
+    <Type Name="inventory_old">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="clientid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="itemid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="health" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="location_desc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="roomid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="objectid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.item_template" Member="item_templates">
+    <Type Name="item_template">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="can_be_held" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="container" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="room_limit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="size" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="can_be_seen_when_held" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="key_code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="spawner_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="room_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="location_description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="item_type_text" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="item_stackable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="damage" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="special_text" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="special" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ItemSpawners" Member="ItemSpawners">
+    <Type Name="ItemSpawner">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="item_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="item_description" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="item_can_be_held" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="item_container" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="limit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="limit_world" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="item_size" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="item_can_be_seen_when_held" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="item_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="item_key_code" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="spawn_timer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="room_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="location_description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="item_type_text" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="item_stackable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="damage" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="special_text" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="special" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.npc" Member="npcs">
+    <Type Name="npc">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="aggressiveness" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="movement_timer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="health_timer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="health" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="roomid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="generic_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="respawn_timer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="movement_radius" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="start_room_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="attack" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carry" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="has_dialog" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="is_food" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="movement_type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NPC_Initial_Inventory" Member="NPC_Initial_Inventories">
+    <Type Name="NPC_Initial_Inventory">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NPCID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="itemid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="groupid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NPC_Templates" Member="NPC_Templates">
+    <Type Name="NPC_Template">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="aggressiveness" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="movement_timer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="health_timer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="generic_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="respawn_timer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="attack" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="carry" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="has_dialog" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="is_food" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="movement_type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="inventory_group" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="starting_health" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="movement_radius" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NPCPhrases" Member="NPCPhrases">
+    <Type Name="NPCPhrase">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="npcid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sayphrase" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="response" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="npctype" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.rooms" Member="rooms">
+    <Type Name="room">
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="longDescription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="x" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="y" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="nexit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nkey" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="visualType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="visualTypeS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="terrain" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="indoor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="wanderingAllowed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="sleepAllowed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="combatAllowed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="soundAllowed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="doorVisualType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="trapdoor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="secretdoor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sactions" Member="sactions">
+    <Type Name="saction">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="action" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="text" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="response" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="primary_action_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.clients" Member="clients">
+    <Type Name="client">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ip_add" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="first_connect" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="last_connect" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="last_touch" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="room_x" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="room_y" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="health" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="roomid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="is_playing" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="logged_in" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.items" Member="items">
+    <Type Name="item">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="generic_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="location_desc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="clientid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="roomid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="objectid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="can_be_held" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="container" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="room_limit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="size" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="can_be_seen_when_held" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="key_code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="spawner_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="health" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="item_stackable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="damage" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="special" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="world_limit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="type_text" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="special_text" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

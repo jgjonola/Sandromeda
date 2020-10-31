@@ -1,0 +1,1 @@
+Data Source=capricornisland.db.2498781.hostedresource.com; Initial Catalog=capricornisland; MultipleActiveResultSets=true; User ID=capricornisland; Password='Dragon123!'

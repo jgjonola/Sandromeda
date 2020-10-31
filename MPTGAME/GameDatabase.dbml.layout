@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 14.25" name="GameDatabase">
+  <DataContextMoniker Name="/GameDatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="49676eef-fc83-4398-bc7a-fde76e89cf6e" absoluteBounds="0.75, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/GameDatabaseDataContext/action" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1445b17-e62b-4e5c-9c6f-e96a7c82217b" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="61c95c7e-563d-4c9d-bcf1-3ea90c9ba226" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/GameDatabaseDataContext/Tile_Visual_Lookup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef784d5b-a5d7-424d-afd7-a6b11dd02452" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93275b2e-c932-4e79-b075-e91c857087d7" absoluteBounds="3.75, 3.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/GameDatabaseDataContext/Inventory_Group" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fe4df29-15f8-41a4-b0e4-5f89d739809a" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddb72eb3-3939-47a9-97bf-3b68fba0d48a" absoluteBounds="6.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/GameDatabaseDataContext/inventory_old" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4bfb2981-be09-45d6-aa81-7826a1c969be" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b79d8868-9c8e-4055-85bb-6d67b516e63a" absoluteBounds="6.75, 3.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/GameDatabaseDataContext/item_template" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e21e6c07-1ebd-430c-8dd7-8eea2da4f8c5" absoluteBounds="6.765, 4.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="17d34a64-19ac-49bc-82d8-78be64862cfd" absoluteBounds="9.75, 0.75, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/GameDatabaseDataContext/ItemSpawner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7ad710c-6e10-4760-9fd6-3c26c676b5aa" absoluteBounds="9.765, 1.21, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a788d43-108a-41a1-932e-404ecb0c6519" absoluteBounds="3.75, 9.75, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/GameDatabaseDataContext/npc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="938dca9b-4a79-442a-8277-8c20a393181e" absoluteBounds="3.765, 10.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="63c9f976-df0b-4070-bb48-be142a871523" absoluteBounds="9.75, 6.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/GameDatabaseDataContext/NPC_Initial_Inventory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e59daec6-5998-4dfb-a6b1-5d1b801a122d" absoluteBounds="9.765, 7.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5c9bb096-2246-406a-aa5c-a3be400e0df9" absoluteBounds="6.75, 9.75, 2, 4.0785139973958309">
+      <DataClassMoniker Name="/GameDatabaseDataContext/NPC_Template" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bfb3166e-0ba0-48ad-9326-1b60911c9235" absoluteBounds="6.765, 10.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93dfc9fb-81d1-47e5-bdb4-f8392a206edb" absoluteBounds="9.75, 9.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/GameDatabaseDataContext/NPCPhrase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0276b2cb-383a-437e-97bf-4a4fbe3c3a0e" absoluteBounds="9.765, 10.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2874fde4-1010-4d0e-b38e-e6e5a00aee56" absoluteBounds="12.75, 0.75, 2, 4.6554182942708326">
+      <DataClassMoniker Name="/GameDatabaseDataContext/room" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0308aa30-2716-4a1d-89ab-e5063b62dcf7" absoluteBounds="12.765, 1.21, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f7a78802-5683-429a-98c3-1deaf3d7a7ca" absoluteBounds="12.75, 6.75, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/GameDatabaseDataContext/saction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b57dc45-3b62-4aaa-8d2d-24062984a639" absoluteBounds="12.765, 7.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="61f10255-569a-4482-8598-c9afa92dad5c" absoluteBounds="0.625, 3.875, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/GameDatabaseDataContext/client" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe308e9f-f1b9-481e-aab1-6e3042b005d2" absoluteBounds="0.64000000000000012, 4.335, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85d47ec0-d309-411c-a81c-d1bcbcd83528" absoluteBounds="4.75, 7.5, 2, 5.4246240234375">
+      <DataClassMoniker Name="/GameDatabaseDataContext/item" />
+      <nestedChildShapes>
+        <elementListCompartment Id="031fd109-059a-4802-8bbe-234101d97a36" absoluteBounds="4.765, 7.96, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
