@@ -26,7 +26,7 @@
 
 <div class="left_panel_area">
 <div class="outliner_tight">
-  <div class="editor_title"><div class="roundcorner"></div>Login</div>
+  <div class="editor_title"><div class="roundcorner"></div>Launch</div>
       <div class="editor_area">
         <div class="editor_content">
                       <label for="text1">Username</label><br /> <asp:Label ID="LabelError" runat="server" Text=""></asp:Label>
