@@ -21,7 +21,7 @@
             <div class="row">
             <div class="outliner">
 
-<!--      <div class="row">
+<!--      <div class="row"> 
         <div class="message_bar"> 
         </div>
       </div>-->
