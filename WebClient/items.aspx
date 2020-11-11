@@ -25,6 +25,7 @@
         <div class="message_bar"> 
         </div>
       </div>-->
+
  
 
 <div class="left_panel_area">    
