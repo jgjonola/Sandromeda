@@ -22,13 +22,13 @@
             <div class="outliner">
 
 <!--      <div class="row">
-        <div class="message_bar">
+        <div class="message_bar"> 
         </div>
       </div>-->
       
       
 
-<div class="left_panel_area">
+<div class="left_panel_area">    
 <div class="outliner_tight">
   <div class="editor_title"><div class="roundcorner"></div>
   Item Editor</div>

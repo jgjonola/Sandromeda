@@ -19,7 +19,7 @@
             function BeginRequestHandler(sender, args)
             {
                 xPos = $get('ListBoxTiles').scrollLeft;
-                yPos = $get('ListBoxTiles').scrollTop;
+                yPos = $get('ListBoxTiles').scrollTop; 
             }
             function EndRequestHandler(sender, args)
             {
