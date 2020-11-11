@@ -35,7 +35,6 @@
       <div class="editor_area">
         <div class="editor_content">
          <form>
-         	dsfdsf
             <div class="editor_row"><div class="rule"></div></div>           
 			Id 57<br />
 			<div class="editor_row"><div class="rule"></div></div>    
