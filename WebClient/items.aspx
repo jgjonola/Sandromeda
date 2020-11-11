@@ -26,8 +26,6 @@
         </div>
       </div>-->
       
-      testing brahm
-                testing john
 
 <div class="left_panel_area">    
 <div class="outliner_tight">
