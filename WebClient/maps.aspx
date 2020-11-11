@@ -48,7 +48,7 @@
                     <a href="#"><div class="icon_button"><div class="icon_delete"></div></div></a>
                     <div class="icon_project_title" style="padding-left: 5px;">capricorn_game</div>	
                 </div>-->
-			<div class="icon_project_title">projeckt kaprikorn</div>
+			<div class="icon_project_title">projeckt caprikorn</div>
                 <div class="tabs_contain">
                     <a href="maps.aspx"><div class="tabs_selected">Maps</div></a>
                     <a href="items.aspx"><div class="tabs">Items</div></a>
