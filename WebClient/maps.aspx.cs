@@ -278,7 +278,7 @@ namespace WebClient
                 title.Controls.Add(new LiteralControl(name.ToUpper()));
                 hoverSpan.Controls.Add(lit);
                 hoverSpan.Controls.Add(title);
-                hoverSpan.Controls.Add(new LiteralControl(description + "<hr class='style-one' />"));
+                     hoverSpan.Controls.Add(new LiteralControl(description + "<hr class='style-one' />"));
 
 
                 ////we have to find out if we have npcs here first
