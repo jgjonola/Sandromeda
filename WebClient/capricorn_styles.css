@@ -99,14 +99,17 @@ body {
   background: linear-gradient(to bottom,  #323232 0%, #2c2c2c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#323232', endColorstr='#2c2c2c',GradientType=0 ); /* IE6-9 */
 }
-table, th, td {
+table, th, td, tr {
 	/* text-align: center; */
 	/* vertical-align: middle; */
 	border-collapse: collapse;
-    border-spacing: 0px 0px;
+    border-spacing: 0 !important;
+	border: 0;
 	padding: 0px;
+	margin: 0 auto !important;
 	table-layout: fixed;
 }
+
 @font-face {
 	font-family: 'GameyFont';
 	src: url('Gamey.ttf');
@@ -212,8 +215,9 @@ a.tooltips02 span {
 }
 div.row {
 	clear: both;
-	padding: 0px 0px 0px 0px;
-	margin:0 auto;
+	padding: 0px 0px 0px 0px !important;
+	margin:0 auto !important;
+	border: 0;
 	width: 100%;
 	display: table;
 }
@@ -587,6 +591,7 @@ div.row {
 	display: table-cell;
 	vertical-align: top;
 	overflow: hidden;
+
 }
 .outliner_tight_margin {
 	border: 1px inset rgba(255,255,255,0.15);
@@ -604,11 +609,12 @@ div.row {
 	border: 3px solid #282828;
 	box-shadow: 0px 0px 100px 10px rgba(0,0,0,0.25) inset;
 	background-color: #000000;
+	margin: 0 auto;
 }
 .table_grid {
 	width: 896px;
 	table-layout: fixed;
-
+	margin: 0 auto;
 }
 .table_info {
 	width: 400px;
@@ -622,11 +628,10 @@ div.row {
 	table-layout:fixed;
 	text-align: center;
 	vertical-align: middle;
-	margin: 0;
-	padding: 0;
-	border-collapse:collapse;
-	display: table-cell;
+	display: block;
 	font-size: 0px;
+	margin: 0 auto;
+	padding: 0;
 }
 .table_grid_cell32:hover {
    	-moz-box-shadow:    inset 0 0 1px rgba(255,255,255,0.75);
