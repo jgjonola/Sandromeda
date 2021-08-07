@@ -450,7 +450,25 @@ namespace WebClient
 
         protected void RepeaterDialog_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
+            //this is the delete button for dialog. 
 
+            if (e.CommandName == "Delete")
+            {
+                DataClasses1DataContext db = new DataClasses1DataContext();
+                NPCPhrase deletePhrase = (from di in db.NPCPhrases
+                                   where di.id == Convert.ToInt32(e.CommandArgument)
+                                   select di).SingleOrDefault();
+                db.NPCPhrases.DeleteOnSubmit(deletePhrase);
+                db.SubmitChanges();
+                NPCPhrases = (from i in db.NPCPhrases
+                            where i.npctype == Convert.ToInt32(Session["SelectedNPCTemplate"])
+                            select i).ToList();
+
+                PanelDialog.Visible = true;
+                RepeaterDialog.DataSource = NPCPhrases;
+                RepeaterDialog.DataBind();
+
+            }
         }
 
         protected void LinkButtonExitDialog_Click(object sender, EventArgs e)
