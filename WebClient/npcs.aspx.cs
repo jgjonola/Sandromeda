@@ -450,7 +450,25 @@ namespace WebClient
 
         protected void RepeaterDialog_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
+            //this is the delete button for dialog. 
 
+            if (e.CommandName == "Delete")
+            {
+                DataClasses1DataContext db = new DataClasses1DataContext();
+                NPCPhrase deletePhrase = (from di in db.NPCPhrases
+                                   where di.id == Convert.ToInt32(e.CommandArgument)
+                                   select di).SingleOrDefault();
+                db.NPCPhrases.DeleteOnSubmit(deletePhrase);
+                db.SubmitChanges();
+                NPCPhrases = (from i in db.NPCPhrases
+                            where i.npctype == Convert.ToInt32(Session["SelectedNPCTemplate"])
+                            select i).ToList();
+
+                PanelDialog.Visible = true;
+                RepeaterDialog.DataSource = NPCPhrases;
+                RepeaterDialog.DataBind();
+
+            }
         }
 
         protected void LinkButtonExitDialog_Click(object sender, EventArgs e)
@@ -462,7 +480,7 @@ namespace WebClient
         {
             if (Session["SelectedNPCTemplate"] != null)
             {
-                //we are editing a templates starting inventory
+                //we are editing a templates phrases
                 if (!PanelNewDialogAdd.Visible)
                 {
                     //show the items available to add
@@ -475,28 +493,38 @@ namespace WebClient
                 }
                 else
                 {
-                    //add the selected item to the NPC_Initial_Inventory table
+                    //add the selected item to the NPC_Phrases table
                     DataClasses1DataContext db = new DataClasses1DataContext();
-                    NPC_Initial_Inventory insertInitial = new NPC_Initial_Inventory
+                    NPCPhrase insertInitial = new NPCPhrase
                     {
-                        NPCID = Convert.ToInt32(Session["SelectedNPCTemplate"]),
-                        itemid = Convert.ToInt32(DropDownListAdd.SelectedValue),
-                        groupid = 0
+                        sayphrase = DropDownListSayWhen.SelectedValue,
+                        npctype = Convert.ToInt32(Session["SelectedNPCTemplate"]),
+                        response = TextBoxPhrase.Text
                     };
 
-                    db.NPC_Initial_Inventories.InsertOnSubmit(insertInitial);
+                    db.NPCPhrases.InsertOnSubmit(insertInitial);
                     db.SubmitChanges();
                     DropDownListAdd.Visible = false;
-                    var templateList = (from i in db.NPC_Initial_Inventories
+                    var templateList = (from i in db.NPCPhrases
                                         join it in db.item_templates
-                                        on i.itemid equals it.id
-                                        where i.NPCID == Convert.ToInt32(Session["SelectedNPCTemplate"])
+                                        on i.npctype equals it.id
+                                        where i.npctype == Convert.ToInt32(Session["SelectedNPCTemplate"])
                                         select it).ToList();
 
-                    PanelInventory.Visible = true;
-                    RepeaterInventory.DataSource = templateList;
-                    RepeaterInventory.DataBind();
+                    PanelDialog.Visible = true;
+                    RepeaterDialog.DataSource = templateList;
+                    RepeaterDialog.DataBind();
+                    TextBoxPhrase.Text = "";   
+                    NPCPhrases = (from p in db.NPCPhrases
+                              where p.npctype == Convert.ToInt32(Session["SelectedNPCTemplate"])
+                              select p).ToList();
+
+                PanelDialog.Visible = true;
+                RepeaterDialog.DataSource = NPCPhrases;
+                RepeaterDialog.DataBind();
                 }
+                
+
             }
         }
 
