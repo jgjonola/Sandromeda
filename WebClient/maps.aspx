@@ -532,7 +532,7 @@
                                                 OnItemDataBound="ListView1_ItemDataBound" OnItemCommand="ListView1_ItemCommand">
 
                                                 <EmptyDataTemplate>
-                                                    <table runat="server" class="table_grid">
+                                                    <table runat="server" class="table_grid" style="border: 0">
                                                         <tr>
                                                             <td>No data was returned.</td>
                                                         </tr>
