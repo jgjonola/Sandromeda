@@ -13,7 +13,7 @@ namespace WebClient
         int gridsize = 7;
         int playerID;
         //int scrollSize = 1;
-        string serverip = "132.148.82.192";//"68.229.32.118" is home;
+        string serverip = "161.199.245.198";//"10.40.0.21";//"132.148.82.192";//"68.229.32.118" is home;
         string port = "7080";
         protected void Page_Load(object sender, EventArgs e)
         {

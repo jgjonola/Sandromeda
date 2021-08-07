@@ -73,7 +73,7 @@ namespace GameHost
                             }
                             catch( Exception e){
                                 Console.WriteLine("Webserver error:" + e.Message );
-                                //throw;
+                                throw;
                             } // suppress any exceptions
                             finally
                             {

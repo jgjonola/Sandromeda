@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="capricornisland" Class="GameDatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=capricornisland.db.2498781.hostedresource.com;Initial Catalog=capricornisland;Persist Security Info=True;User ID=capricornisland" SettingsObjectName="GameHost.Properties.Settings" SettingsPropertyName="capricornislandConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=P3NWPLSK12SQL-v13.shr.prod.phx3.secureserver.net;Initial Catalog=capricornisland;Persist Security Info=True;User ID=capricornisland" SettingsObjectName="GameHost.Properties.Settings" SettingsPropertyName="capricornislandConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.actions" Member="actions">
     <Type Name="action">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

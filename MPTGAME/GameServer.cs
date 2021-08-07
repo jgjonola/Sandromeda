@@ -27,7 +27,6 @@ namespace DefaultNamespace
         public List<ClientPerson> clientPeople;
         public Map map;
         public SqlConnection con;
-        //string str = @"Data Source=capricornisland.db.2498781.hostedresource.com; Initial Catalog=capricornisland; MultipleActiveResultSets=true; User ID=capricornisland; Password='Dragon123!'";
         public delegate void UpdateRichEditCallback(string text);
         public delegate void UpdateClientListCallback();
         public AsyncCallback pfnWorkerCallBack;
@@ -37,8 +36,6 @@ namespace DefaultNamespace
         Object locker;
         public LoadingForm loadingForm;
         public List<action> m_actions;
-       // MessageGateway<IMobileGateway, MobileGatewayConfiguration> messageGateway;
-        //IMobileGateway mobileGateway;
         object textLocker;
         object sendlock;
 
@@ -288,48 +285,7 @@ namespace DefaultNamespace
             }
         }
 
-        private void SetupSMS()
-        {
-            //try
-            //{
-            //    mobileGateway = MobileGatewayFactory.Default;
-            //    MobileGatewayConfiguration config = MobileGatewayConfiguration.NewInstance();
-            //    config.PortName = "COM5";
-            //    config.BaudRate = PortBaudRate.BitsPerSecond115200;
-            //    config.DataBits = PortDataBits.Eight;
-            //    config.Parity = PortParity.None;
-            //    config.StopBits = PortStopBits.One;
-            //    config.Handshake = PortHandshake.None;
-            //    config.DisablePinCheck = true;
-            //    config.ConcatenateMessage = true;
-            //    config.DtrEnable = true;
-            //    config.RtsEnable = true;
-            //    config.LicenseKey = "850801-02-6191";
 
-
-            //    messageGateway = MessageGateway<IMobileGateway, MobileGatewayConfiguration>.NewInstance();
-            //    mobileGateway = messageGateway.Find(config);
-
-            //    if (mobileGateway != null)
-            //    {
-            //        Console.WriteLine("connected to Gateway");
-            //        AppendToRichEditControl("\r\nConnected to Modem\r\n");
-            //        mobileGateway.EnableNewMessageNotification(MessageNotification.ReceivedMessage);
-            //        mobileGateway.MessageReceived += GotSMS;
-            //        mobileGateway.DeleteMessage(MessageDeleteOption.AllMessages); //delete any old messages
-
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("Error connecting to gateway!");
-            //    }
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine("Exception connecting to gateway: {0}. Source: {1}.", e.Message, e.Source);
-            //    AppendToRichEditControl("Error connecting to modem:" + e.Message);
-            //}
-        }
 
 
 
@@ -338,31 +294,7 @@ namespace DefaultNamespace
             
         }
 
-        //internal void SendText(string username, string recip, string mes)
-        //{
-        //    var t = Task.Run(() =>
-        //    {
-        //        lock (textLocker)
-        //        {
-        //            try
-        //            {
-        //                Sms sms = Sms.NewInstance();
-        //                sms.LongMessageOption = MessageSplitOption.Concatenate;
-        //                sms.DestinationAddress = recip;
-        //                sms.Content = mes;
-        //                mobileGateway.Send(sms);
-        //                Console.WriteLine("Sending Message:{0} To:{1}", mes, recip);
-        //                AppendToRichEditControl(string.Format("\r\nTo {0}({1}):\r\n{2}\r\n", username, recip, mes));
-        //                Console.WriteLine("Sent it!");
-        //            }
-        //            catch (Exception e)
-        //            {
-        //                Console.WriteLine("Exception when sending message: {0} From:{1}", e.Message, e.Source);
-        //                AppendToRichEditControl("Error in Send SMS: " + e.Message + mobileGateway.LastError.Message);
-        //            }
-        //        }
-        //    });
-        //}
+
 
         internal void CheckText()
         {
@@ -371,72 +303,10 @@ namespace DefaultNamespace
             ws.Run();
         }
 
-        //private void GotSMS(object sender, MessagingToolkit.Core.Mobile.Event.MessageReceivedEventArgs e)
-        //{ 
-        //    //lock(sendlock)
-        //    //{
-        //        Console.WriteLine(e.Message.PhoneNumber + ":" + e.Message.Content);
-        //        bool notFound = true;
-        //        foreach (ClientPerson client in clientPeople)
-        //        {
-        //            if (client.phone == e.Message.PhoneNumber)
-        //            {
-        //                AppendToRichEditControl("\r\nFrom: " + client.m_name + "\r\n" + e.Message.Content+"\r\n");
-        //                client.processMessage(e.Message.Content);
-        //                notFound = false;
-        //                if (client.m_loggedin)
-        //                {
-        //                    client.m_loggedin = false;
-        //                using (GameDatabaseDataContext gdb = new GameDatabaseDataContext())
-        //                {
-        //                    if (gdb.DatabaseExists())
-        //                    {
-        //                        var q6 = (from clts in gdb.clients
-        //                                  where clts.phone == e.Message.PhoneNumber
-        //                                  select clts).SingleOrDefault();
-        //                        q6.logged_in = false;
-        //                        gdb.SubmitChanges();
-        //                    }
-        //                    else
-        //                    {
-        //                        //couldn't fidn the client
-        //                        AppendToRichEditControl("\r\nCouldn't tell the database that someone was logged in due to the database not being connected in GetSMS()\r\n");
-        //                    }
-        //                }
-        //                }
-        //                //delete message
-        //                mobileGateway.DeleteMessage(MessageDeleteOption.ByIndex,e.Message.Index);
-        //                break;
-        //            }
-        //        }
-        //    if (notFound)
-        //    {
-
-        //        using (GameDatabaseDataContext gdb = new GameDatabaseDataContext())
-        //        {
-        //            if (gdb.DatabaseExists())
-        //            {
-        //                var q6 = (from clts in gdb.clients
-        //                          where clts.phone == e.Message.PhoneNumber
-        //                          select clts).SingleOrDefault();
-        //                if (q6.id != 0)
-        //                {
-        //                    q6.logged_in = false;
-        //                    gdb.SubmitChanges();
-        //                }
-        //                clientPeople.Add(new ClientPerson(this, e.Message.PhoneNumber, q6.id.ToString()));
-        //            }
-        //            else
-        //            {
-        //                AppendToRichEditControl("\r\nA new person tried to join, but I couldn't connect to the database in GotSMS() in GameServer.\r\n");
-        //            }
-        //        }
-        //        }
-        //}
+       
 
         public string GetTextWeb(HttpListenerRequest request)
         {
-            
             if (request.QueryString.GetValues("userid") != null)
             {
                     string from = request.QueryString.GetValues("From")[0];
@@ -473,7 +343,7 @@ namespace DefaultNamespace
                     string sURL;
                     if (fullMessage != "\0")
                     {
-                        sURL = String.Format("http://gjonola.com/capricorn/poster.aspx?To={0}&Body={1}&dbid={2}", p, fullMessage,dbid);
+                        sURL = String.Format("http://gjonola.com/capricorn/poster.aspx?To={0}&Body={1}&dbid={2}", p, fullMessage,dbid);  
                         WebRequest myWebRequest = WebRequest.Create(sURL);
                         using (WebResponse myWebResponse = myWebRequest.GetResponse())
                         {

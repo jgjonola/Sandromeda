@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="capricornisland" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=capricornisland.db.2498781.hostedresource.com;Initial Catalog=capricornisland;Persist Security Info=True;User ID=capricornisland" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="capricornislandConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=P3NWPLSK12SQL-v13.shr.prod.phx3.secureserver.net;Initial Catalog=capricornisland;Persist Security Info=True;User ID=capricornisland" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="capricornislandConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Tile_Visual_Lookup" Member="Tile_Visual_Lookups">
     <Type Name="Tile_Visual_Lookup">
       <Column Name="tilename" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

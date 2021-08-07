@@ -5,10 +5,10 @@
     <Setting Name="capricornislandConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=capricornisland.db.2498781.hostedresource.com;Initial Catalog=capricornisland;Persist Security Info=True;User ID=capricornisland;Password=Dragon123!&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=P3NWPLSK12SQL-v13.shr.prod.phx3.secureserver.net;Initial Catalog=capricornisland;Persist Security Info=True;User ID=capricornisland;Password=Dragon123!&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=capricornisland.db.2498781.hostedresource.com;Initial Catalog=capricornisland;Persist Security Info=True;User ID=capricornisland;Password=Dragon123!</Value>
+      <Value Profile="(Default)">Data Source=P3NWPLSK12SQL-v13.shr.prod.phx3.secureserver.net;Initial Catalog=capricornisland;Persist Security Info=True;User ID=capricornisland;Password=Dragon123!</Value>
     </Setting>
   </Settings>
 </SettingsFile>
