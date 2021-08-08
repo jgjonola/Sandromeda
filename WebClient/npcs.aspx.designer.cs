@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebClient {
-    
-    
-    public partial class npcs {
-        
+namespace WebClient
+{
+
+
+    public partial class npcs
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// LinkButtonCreate control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonCreate;
-        
+
         /// <summary>
         /// LinkButtonEditTemplate control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonEditTemplate;
-        
+
         /// <summary>
         /// LinkButtonEditNPC control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonEditNPC;
-        
+
         /// <summary>
         /// PanelList control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelList;
-        
+
         /// <summary>
         /// LabelTitle control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelTitle;
-        
+
         /// <summary>
         /// ListBoxNPC control.
         /// </summary>
@@ -74,16 +76,25 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox ListBoxNPC;
-        
+
         /// <summary>
-        /// LinkButtonEdit control.
+        /// LinkButtonEditImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButtonEdit;
-        
+        protected global::System.Web.UI.WebControls.LinkButton LinkButtonEditImage;
+
+        /// <summary>
+        /// FileUpload1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+
         /// <summary>
         /// ImageNPC control.
         /// </summary>
@@ -92,7 +103,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image ImageNPC;
-        
+
         /// <summary>
         /// LabelNewName control.
         /// </summary>
@@ -101,7 +112,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNewName;
-        
+
         /// <summary>
         /// TextBoxNewName control.
         /// </summary>
@@ -110,7 +121,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxNewName;
-        
+
         /// <summary>
         /// LabelNewDescription control.
         /// </summary>
@@ -119,7 +130,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNewDescription;
-        
+
         /// <summary>
         /// TextBoxNewDescription control.
         /// </summary>
@@ -128,7 +139,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxNewDescription;
-        
+
         /// <summary>
         /// LabelStartingHealth control.
         /// </summary>
@@ -137,7 +148,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelStartingHealth;
-        
+
         /// <summary>
         /// TextBoxStartingHealth control.
         /// </summary>
@@ -146,7 +157,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxStartingHealth;
-        
+
         /// <summary>
         /// LabelNewHealthTimer control.
         /// </summary>
@@ -155,7 +166,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNewHealthTimer;
-        
+
         /// <summary>
         /// TextBoxNewHealthTimer control.
         /// </summary>
@@ -164,7 +175,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxNewHealthTimer;
-        
+
         /// <summary>
         /// LabelNewRespawnTimer control.
         /// </summary>
@@ -173,7 +184,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNewRespawnTimer;
-        
+
         /// <summary>
         /// TextBoxNewRespawnTimer control.
         /// </summary>
@@ -182,7 +193,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxNewRespawnTimer;
-        
+
         /// <summary>
         /// LabelNewMovementRadius control.
         /// </summary>
@@ -191,7 +202,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNewMovementRadius;
-        
+
         /// <summary>
         /// TextBoxNewMovementRadius control.
         /// </summary>
@@ -200,7 +211,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxNewMovementRadius;
-        
+
         /// <summary>
         /// LabelnNewMovementTimer control.
         /// </summary>
@@ -209,7 +220,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelnNewMovementTimer;
-        
+
         /// <summary>
         /// TextBoxNewMovementTimer control.
         /// </summary>
@@ -218,7 +229,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxNewMovementTimer;
-        
+
         /// <summary>
         /// LabelNewMovementType control.
         /// </summary>
@@ -227,7 +238,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNewMovementType;
-        
+
         /// <summary>
         /// TextBoxNewMovementType control.
         /// </summary>
@@ -236,7 +247,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxNewMovementType;
-        
+
         /// <summary>
         /// LabelNewAttack control.
         /// </summary>
@@ -245,7 +256,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNewAttack;
-        
+
         /// <summary>
         /// TextBoxNewAttack control.
         /// </summary>
@@ -254,7 +265,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxNewAttack;
-        
+
         /// <summary>
         /// LabelNewAggressiveness control.
         /// </summary>
@@ -263,7 +274,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNewAggressiveness;
-        
+
         /// <summary>
         /// TextBoxNewAggressiveness control.
         /// </summary>
@@ -272,7 +283,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxNewAggressiveness;
-        
+
         /// <summary>
         /// LabelNewCarry control.
         /// </summary>
@@ -281,7 +292,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNewCarry;
-        
+
         /// <summary>
         /// TextBoxNewCarry control.
         /// </summary>
@@ -290,7 +301,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxNewCarry;
-        
+
         /// <summary>
         /// PanelNPC control.
         /// </summary>
@@ -299,7 +310,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelNPC;
-        
+
         /// <summary>
         /// LabelGenericTypeName control.
         /// </summary>
@@ -308,7 +319,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelGenericTypeName;
-        
+
         /// <summary>
         /// TextBoxGTN control.
         /// </summary>
@@ -317,7 +328,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxGTN;
-        
+
         /// <summary>
         /// LabelRoomID control.
         /// </summary>
@@ -326,7 +337,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelRoomID;
-        
+
         /// <summary>
         /// TextBoxRoomID control.
         /// </summary>
@@ -335,7 +346,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxRoomID;
-        
+
         /// <summary>
         /// LabelType control.
         /// </summary>
@@ -344,7 +355,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelType;
-        
+
         /// <summary>
         /// TextBoxType control.
         /// </summary>
@@ -353,7 +364,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxType;
-        
+
         /// <summary>
         /// CheckBoxNewIsFood control.
         /// </summary>
@@ -362,7 +373,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox CheckBoxNewIsFood;
-        
+
         /// <summary>
         /// LinkButtonStartInventory control.
         /// </summary>
@@ -371,7 +382,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonStartInventory;
-        
+
         /// <summary>
         /// LinkButtonStartingDialog control.
         /// </summary>
@@ -380,7 +391,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonStartingDialog;
-        
+
         /// <summary>
         /// LinkButtonSaveNew control.
         /// </summary>
@@ -389,7 +400,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonSaveNew;
-        
+
         /// <summary>
         /// PanelInventory control.
         /// </summary>
@@ -398,7 +409,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelInventory;
-        
+
         /// <summary>
         /// LabelInventory control.
         /// </summary>
@@ -407,7 +418,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelInventory;
-        
+
         /// <summary>
         /// RepeaterInventory control.
         /// </summary>
@@ -416,7 +427,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater RepeaterInventory;
-        
+
         /// <summary>
         /// DropDownListAdd control.
         /// </summary>
@@ -425,7 +436,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownListAdd;
-        
+
         /// <summary>
         /// LinkButtonExitInventory control.
         /// </summary>
@@ -434,7 +445,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonExitInventory;
-        
+
         /// <summary>
         /// LinkButtonAddInventory control.
         /// </summary>
@@ -443,7 +454,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonAddInventory;
-        
+
         /// <summary>
         /// PanelDialog control.
         /// </summary>
@@ -452,7 +463,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelDialog;
-        
+
         /// <summary>
         /// Label1 control.
         /// </summary>
@@ -461,7 +472,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label1;
-        
+
         /// <summary>
         /// RepeaterDialog control.
         /// </summary>
@@ -470,7 +481,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater RepeaterDialog;
-        
+
         /// <summary>
         /// PanelNewDialogAdd control.
         /// </summary>
@@ -479,7 +490,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelNewDialogAdd;
-        
+
         /// <summary>
         /// LabelSayWhen control.
         /// </summary>
@@ -488,7 +499,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelSayWhen;
-        
+
         /// <summary>
         /// DropDownListSayWhen control.
         /// </summary>
@@ -497,7 +508,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownListSayWhen;
-        
+
         /// <summary>
         /// LabelPhrase control.
         /// </summary>
@@ -506,7 +517,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelPhrase;
-        
+
         /// <summary>
         /// TextBoxPhrase control.
         /// </summary>
@@ -515,7 +526,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxPhrase;
-        
+
         /// <summary>
         /// LinkButtonExitDialog control.
         /// </summary>
@@ -524,7 +535,7 @@ namespace WebClient {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton LinkButtonExitDialog;
-        
+
         /// <summary>
         /// LinkButtonAddDialog control.
         /// </summary>

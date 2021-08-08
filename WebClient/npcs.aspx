@@ -76,8 +76,9 @@
                                                         <label for="item_select">Image</label>
                                                     </legend>
                                                     <div class="item_contain_list">
-                                                        <asp:LinkButton ID="LinkButtonEdit" runat="server" CssClass="item_corner_ul" CommandName="Edit" CommandArgument='<%# Eval("id") %>'><div class='icon_edit'></div></asp:LinkButton>
+                                                        <asp:LinkButton ID="LinkButtonEditImage" runat="server" CssClass="item_corner_ul" CommandName="Edit" CommandArgument='<%# Eval("id") %>' OnClick="LinkButtonEditImage_Click"><div class='icon_edit'></div></asp:LinkButton>
                                                         <div class="item_64">
+                                                            <asp:FileUpload ID="FileUpload1" CssClass="item_corner_ul" runat="server"  />
                                                             <asp:Image ID="ImageNPC" runat="server" Height="16px" Width="16px"/>
                                                         </div>
                                                     </div>

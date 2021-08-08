@@ -67,6 +67,9 @@ namespace GameHost
 
             }
 
+
+            //add a saysomething timer for random phrases.
+
         }
 
         override public void sM(string msg)

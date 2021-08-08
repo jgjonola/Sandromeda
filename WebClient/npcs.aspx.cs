@@ -584,5 +584,20 @@ namespace WebClient
                 ImageNPC.ImageUrl = "images/npcs/" + selectedNpc.name + ".png";
             }
         }
+
+        protected void LinkButtonEditImage_Click(object sender, EventArgs e)
+        {
+            //here we are changing the image for the npc.  We have to get the image and upload it to the server 
+            //it has to be named the same as the npc.  Do we let them select from old images if you upload over th old one?
+
+
+            //open a get file dialog
+            
+            //get the image...
+
+            //resize the image to the right size
+
+            //save the image to the images/npc direcory with the name of the monster type
+        }
     }
 }
