@@ -353,7 +353,7 @@ namespace GameHost
             {
                 if (people.Count == 1)
                 {
-                    person.sM("You say it, but nobody can hear you.\r\n");
+                    person.sM("You say it, but nobody can hear you.\r\n\0");
                 }
                 else
                 {
@@ -363,7 +363,7 @@ namespace GameHost
                     }
                     else
                     {
-                        person.sM(String.Format("You say, '{0}'\r\n", message));
+                        person.sM(String.Format("You say, '{0}'\r\n\0", message));
                     }
                 }
 
